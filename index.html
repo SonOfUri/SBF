@@ -36,6 +36,22 @@
     <script type="module" crossorigin="" src="/assets/index-9a1cd9ca.js"></script>
     <link rel="stylesheet" href="/assets/index-a7065636.css" />
     <style type="text/css">
+        
+        .falling-banana.svelte-j21y6u {
+            position: absolute;
+            animation: svelte-j21y6u-fall var(--speed) linear infinite;
+            z-index: 100;
+        }
+
+        @keyframes svelte-j21y6u-fall {
+            0% {
+                transform: translateY(-100px);
+            }
+
+            to {
+                transform: translateY(100vh);
+            }
+        }
         .rfm-marquee-container {
             overflow-x: hidden;
             display: flex;
@@ -805,6 +821,7 @@
 <body>
 
     <body>
+        
         <div id="root">
             <div class="w-full min-h-screen bg-bg">
                 <div style="opacity: 1;">
@@ -892,9 +909,14 @@
                             </svg>
                         </div>
                     </nav>
-                    <section class="w-full min-h-screen relative px-5 py-10 flex items-center" id="home"><video
-                            src="/assets/vid1.mp4" playsinline="" autoplay="" preload="auto" loop=""
+                    <section class="w-full min-h-screen relative px-5 py-10 flex items-center" id="home">
+                        
+                        
+                        <video
+                            src="/assets/hightech-530138ea.mp4" playsinline="" autoplay="" preload="auto" loop=""
                             class="w-full h-full fixed top-0 left-0 object-cover brightness-75"></video>
+
+                            
                         <div class="my-container z-10 flex items-center">
                             <div class="w-full text-white lg:text-left text-center">
                                 <div class="mt-2 w-fit mx-auto lg:mx-0">

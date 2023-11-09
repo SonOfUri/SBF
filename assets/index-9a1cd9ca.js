@@ -44771,7 +44771,7 @@ const HC = () => {
       }),
     });
   },
-  jC = "/assets/vid1.mp4",
+  jC = "/assets/hightech-530138ea.mp4",
   BC = () => {
     const e = xC();
     async function t() {
