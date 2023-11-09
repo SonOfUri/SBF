@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBF</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="./assets/sbf.jpg" type="image/x-icon">
+
+    <style>
+        
+    #gimmick {
+    display:block;
+    pointer-events:none;
+    position: absolute;
+    top:0;
+    left:0;
+}
+    </style>
+</head>
+<body >
+
+    
+  <style>
+    #image-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #image-container img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    #content {
+      display: none;
+      background-image: url(/assets/bg.gif);
+      background-position: center;
+      background-size: cover;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    #content button{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+  </style>
+
+  <div id="image-container">
+    <img src="/assets/latestgif.gif" alt="Your GIF">
+  </div>
+
+  <div id="content">
+    <button>Click Here</button>
+
+  </div>
+    
+
+  <script>
+    const imageContainer = document.getElementById('image-container');
+    const contentContainer = document.getElementById('content');
+
+    function hideImageContainerAndShowContent() {
+      imageContainer.style.display = 'none';
+      contentContainer.style.display = 'block';
+    }
+
+    // Set a timeout to hide the image container and show the content after 10 seconds
+    setTimeout(hideImageContainerAndShowContent, 2000); // 10000 milliseconds = 10 seconds
+
+
+  </script>
+
+  <script>
+    function gimmick(el) {
+    var exists = document.getElementById('gimmick')
+    if (exists) {
+        exists.parentNode.removeChild(exists);
+        return false;
+    }
+
+    var element = document.querySelector(el);
+    var canvas = document.createElement('canvas'),
+        ctx = canvas.getContext('2d'),
+        focused = false;
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    canvas.id = 'gimmick'
+
+    var coin = new Image();
+    coin.src = '/coin.png'
+    // 440 wide, 40 high, 10 states
+    coin.onload = function () {
+        element.appendChild(canvas)
+        focused = true;
+        drawloop();
+    }
+    var coins = []
+
+    function drawloop() {
+        if (focused) {
+            requestAnimationFrame(drawloop);
+        }
+        
+        ctx.clearRect(0, 0, canvas.width, canvas.height)
+
+        if (Math.random() < .3) {
+            coins.push({
+                x: Math.random() * canvas.width | 0,
+                y: -50,
+                dy: 3,
+                s: 0.5 + Math.random(),
+                state: Math.random() * 10 | 0
+            })
+        }
+        var i = coins.length
+        while (i--) {
+            var x = coins[i].x
+            var y = coins[i].y
+            var s = coins[i].s
+            var state = coins[i].state
+            coins[i].state = (state > 9) ? 0 : state + 0.1
+            coins[i].dy += 0.3
+            coins[i].y += coins[i].dy
+
+            ctx.drawImage(coin, 44 * Math.floor(state), 0, 44, 40, x, y, 44 * s, 40 * s)
+
+            if (y > canvas.height) {
+                coins.splice(i, 1);
+            }
+        }
+    }
+
+}
+
+var button = document.querySelector('button')
+button.onclick = function () {
+    gimmick('body')
+}
+  </script>
+</body>
+</html>
