@@ -9248,7 +9248,7 @@ const xn = ({ children: e, className: t, link: r, onClick: s, type: c }) =>
           }`,
           children: [
             $.jsx("img", {
-              src: "/sbf-coin.png",
+              src: "/sam.png",
               alt: "Logo",
               className: "w-20 mx-auto mt-10 relative z-10",
             }),
@@ -9306,7 +9306,7 @@ const xn = ({ children: e, className: t, link: r, onClick: s, type: c }) =>
                   className: "flex items-center gap-2",
                   children: [
                     $.jsx("img", {
-                      src: "/sbf-coin.png",
+                      src: "/sam.png",
                       alt: "Navlogo",
                       className: "w-12 cursor-pointer",
                       onClick: c,
@@ -44871,7 +44871,7 @@ const HC = () => {
                 className: "w-full justify-center lg:flex hidden",
                 children: $.jsx(gr.img, {
                   animate: e,
-                  src: "/hero/sbf-family.png",
+                  src: "/hero/sam.png",
                   alt: "Hero",
                   className: "",
                 }),
@@ -45464,7 +45464,7 @@ const GC = () => {
             children: $.jsx(gr.img, {
               animate: { rotate: 360 },
               transition: { duration: 20, ease: "linear", repeat: 1 / 0 },
-              src: "/sbf-coin.png",
+              src: "/sam.png",
               alt: "Logo",
               className: "lg:w-[70%] w-72 lg:relative absolute",
             }),
@@ -45512,17 +45512,17 @@ const QC = () => {
                   className: "flex w-fit mx-auto items-end",
                   children: [
                     $.jsx("img", {
-                      src: "/sbf-coin.png",
+                      src: "/sam.png",
                       alt: "Logo",
                       className: "w-20 mx-auto -mr-8",
                     }),
                     $.jsx("img", {
-                      src: "/sbf-coin.png",
+                      src: "/sam.png",
                       alt: "Logo",
                       className: "w-32 mx-auto relative z-10",
                     }),
                     $.jsx("img", {
-                      src: "/sbf-coin.png",
+                      src: "/sam.png",
                       alt: "Logo",
                       className: "w-20 mx-auto -ml-8",
                     }),
