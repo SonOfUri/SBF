@@ -44798,7 +44798,7 @@ const HC = () => {
             src: jC,
             playsInline: !0,
             autoPlay: !0,
-            muted: !0,
+            // muted: !1,
             preload: "auto",
             loop: !0,
             className:
@@ -45439,7 +45439,7 @@ const GC = () => {
       }),
     });
   },
-  qC = "/assets/vid2.mp4",
+  qC = "/assets/spin.mp4",
   ZC = () =>
     $.jsx("section", {
       className:
@@ -49555,7 +49555,7 @@ const Z2 = Tp(vv),
               className: "w-full h-screen bg-black",
               children: $.jsx("video", {
                 playsInline: !0,
-                muted: !0,
+                muted: !1,
                 autoPlay: !0,
                 preload: "auto",
                 onEnded: () => {
