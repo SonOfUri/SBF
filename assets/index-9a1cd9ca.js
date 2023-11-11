@@ -1472,7 +1472,7 @@ var Ma,
     else {
       for (
         Ma = Ma || document.createElement("div"),
-          Ma.innerHTML = "<svg>" + t.valueOf().toString() + "</svg>",
+          Ma.innerHTML = "<svg style="display: none;" >" + t.valueOf().toString() + "</svg>",
           t = Ma.firstChild;
         e.firstChild;
 
@@ -9220,16 +9220,16 @@ const xn = ({ children: e, className: t, link: r, onClick: s, type: c }) =>
           link: "https://sbf.life/",
           type: "external",
         },
-        {
-          title: "Audit 1",
-          link: "https://github.com/Audit-Ace/Audits-Smart-Contracts/blob/main/SBF%20Audit%20Report.pdfroadmap",
-          type: "external",
-        },
-        {
-          title: "Audit 2",
-          link: "https://github.com/SpyWolfNetwork/Smart_Contract_Audits/blob/main/October_2023/SBF_0x2FcBD5a6eb694d573D280664393681cB52b9a98b.pdf",
-          type: "external",
-        },
+        // {
+        //   title: "Audit 1",
+        //   link: "https://github.com/Audit-Ace/Audits-Smart-Contracts/blob/main/SBF%20Audit%20Report.pdfroadmap",
+        //   type: "external",
+        // },
+        // {
+        //   title: "Audit 2",
+        //   link: "https://github.com/SpyWolfNetwork/Smart_Contract_Audits/blob/main/October_2023/SBF_0x2FcBD5a6eb694d573D280664393681cB52b9a98b.pdf",
+        //   type: "external",
+        // },
       ],
       [t, r] = re.useState(!1),
       s = () => {
@@ -9317,7 +9317,7 @@ const xn = ({ children: e, className: t, link: r, onClick: s, type: c }) =>
               }),
               $.jsx("ul", {
                 className:
-                  "w-full justify-center gap-x-9 text-white xl:flex hidden items-center text-sm font-secondary",
+                  "w-full justify-center gap-x-9 text-white xl:flex hidden items-center text-sm font-secondary u-class-1",
                 children: e.slice(0, 6).map((f) =>
                   $.jsx(
                     "li",
@@ -9350,7 +9350,7 @@ const xn = ({ children: e, className: t, link: r, onClick: s, type: c }) =>
                 children: [
                   $.jsx(xn, {
                     link: "https://t.me/",
-                    className: "hidden xl:flex",
+                    className: " xl:flex",
                     type: "icon",
                     children: $.jsx("img", {
                       src: "/socmed/tg.webp",
@@ -9360,7 +9360,7 @@ const xn = ({ children: e, className: t, link: r, onClick: s, type: c }) =>
                   }),
                   $.jsx(xn, {
                     link: "https://twitter.com/",
-                    className: "hidden xl:flex",
+                    className: " xl:flex",
                     type: "icon",
                     children: $.jsx("img", {
                       src: "/socmed/twitter.webp",
@@ -9368,11 +9368,11 @@ const xn = ({ children: e, className: t, link: r, onClick: s, type: c }) =>
                       className: "",
                     }),
                   }),
-                  $.jsx(xn, {
-                    link: "https://sbf.life/",
-                    className: "",
-                    children: "GITBOOK",
-                  }),
+                  // $.jsx(xn, {
+                  //   link: "https://sbf.life/",
+                  //   className: "",
+                  //   children: "GITBOOK",
+                  // }),
                 ],
               }),
               $.jsx(Kb, {
@@ -44791,7 +44791,7 @@ const HC = () => {
         t();
       }, []),
       $.jsxs("section", {
-        className: "w-full min-h-screen relative px-5 py-10 flex items-center",
+        className: "w-full min-h-screen relative px-5 py-10 flex items-center u-class-x",
         id: "home",
         children: [
           $.jsx("video", {
@@ -45146,7 +45146,7 @@ const GC = () => {
       { title: "PinkSale", img: "pinksale" },
     ];
     return $.jsx("div", {
-      className: "w-full relative z-10 h-auto px-5 py-10",
+      className: "w-full relative z-10 h-auto px-5 py-10 u-class-1",
       id: "partners",
       children: $.jsxs("div", {
         className: "my-container space-y-10",

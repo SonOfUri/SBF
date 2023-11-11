@@ -472,7 +472,7 @@ html,
 body {
     scroll-behavior: smooth;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 0.8rem;
     height: 0.5rem;
 }
@@ -487,7 +487,7 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
     background: #999;
-}
+} */
 .glitch {
     font-size: 5rem;
     font-weight: 700;
@@ -1462,3 +1462,19 @@ body {
         line-height: 1;
     }
 }
+
+.u-class-1{
+    display: none !important;
+}
+
+body {
+    overflow: hidden !important;
+  }
+  
+  .section {
+    height: 100vh !important; /* Set the height of your first section to the full viewport height */
+    overflow: auto !important; /* Enable scrolling only for the first section */
+  }
+  
+  /* Add any additional styles for your sections as needed */
+  
