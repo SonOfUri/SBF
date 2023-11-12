@@ -9346,11 +9346,11 @@ const xn = ({ children: e, className: t, link: r, onClick: s, type: c }) =>
                 ),
               }),
               $.jsxs("div", {
-                className: "w-full place-content-end xl:flex gap-2",
+                className: "w-full place-content-end xl:flex gap-2 u-class-3",
                 children: [
                   $.jsx(xn, {
                     link: "https://t.me/",
-                    className: " xl:flex",
+                    className: " xl:flex ",
                     type: "icon",
                     children: $.jsx("img", {
                       src: "/socmed/tg.webp",
@@ -9360,7 +9360,7 @@ const xn = ({ children: e, className: t, link: r, onClick: s, type: c }) =>
                   }),
                   $.jsx(xn, {
                     link: "https://twitter.com/",
-                    className: " xl:flex",
+                    className: " xl:flex ",
                     type: "icon",
                     children: $.jsx("img", {
                       src: "/socmed/twitter.webp",
