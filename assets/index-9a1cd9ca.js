@@ -44771,7 +44771,7 @@ const HC = () => {
       }),
     });
   },
-  jC = "/assets/vid1.mp4",
+  jC = "/assets/vid1.mov",
   BC = () => {
     const e = xC();
     async function t() {
