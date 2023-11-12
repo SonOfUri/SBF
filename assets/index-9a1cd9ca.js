@@ -44771,7 +44771,7 @@ const HC = () => {
       }),
     });
   },
-  jC = "/assets/vid1.mov",
+  jC = "/assets/vid1.mp4",
   BC = () => {
     const e = xC();
     async function t() {
@@ -44847,7 +44847,7 @@ const HC = () => {
                       className:
                         "mt-4 font-secondary lg:w-[33rem] lg:text-left text-center w-full",
                       children:
-                        "All That is hidden shall be revealed, $SBF is here to changhe everything. #FTX",
+                        "All That is hidden shall be revealed, $SBF is here to changhe everything.  #FTX",
                     }),
                   }),
                   $.jsxs($t, {
