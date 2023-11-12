@@ -44818,7 +44818,7 @@ const HC = () => {
                         children: $.jsx("h1", {
                           className:
                             "font-primary lg:max-w-sm text-4xl sm:text-6xl md:text-4xl",
-                          children: "$Bitcoin + SBF =",
+                          children: "SBF will send you to",
                         }),
                       }),
                       $.jsx($t, {
@@ -44847,7 +44847,7 @@ const HC = () => {
                       className:
                         "mt-4 font-secondary lg:w-[33rem] lg:text-left text-center w-full",
                       children:
-                        "Join our journey to catch the next SBFs, let it be Bitcoin or any other coin! $SBF is the future of crypto! Stake $SBF to receive bonus rewards when an SBF event happens!",
+                        "All That is hidden shall be revealed, $SBF is here to changhe everything. #FTX",
                     }),
                   }),
                   $.jsxs($t, {
